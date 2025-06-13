@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros Passos com HTML</title>
 </head>
-<body>
+<body style="background-color: black; color: white">
     <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    
     <ul>
-        <li><a href="#surgimento ">História dos computadores</a></li>
-        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
-        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
-        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#form">Trabalhando com formularios</a></li>
-        <li><a href="#link">Links de referências</a></li>
+        <li><a style ="color: #33cca8;" href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a style ="color: #33cca8;"href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a style ="color: #33cca8;"href="#form">Trabalhando com formularios</a></li>
+        <li><a style ="color: #33cca8;"href="#imagem">Como inserir <i>Imagens</i></a></li>
+        <li><a style ="color: #33cca8;"href="#tabelas">Como inserir <i>Tabelas</i></a></li>
+        <li><a style ="color: #33cca8;"href="#videos">Como inserir <i>Videos</i></a></li>
+        <li><a style ="color: #33cca8;" href="#link">Links de referências</a></li>
     </ul>
 
     
 <hr>
     <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
-     <small><a href="#inicio">(Voltar)</a></small>
+     <small><a style ="color: #33cca8;"href="#inicio">(Voltar)</a></small>
 
     <p>A declaração <!DOCTYPE html> indica que este documento segue o padrão HTML5. 
         O elemento <strong><b>html</b></strong> é o elemento raiz de uma página HTML,
@@ -38,7 +38,7 @@
         e listas. 
 <hr>
     <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-     <small><a href="#inicio">(Voltar)</a></small>
+     <small><a style ="color: #33cca8;" href="#inicio">(Voltar)</a></small>
 
 
       <p>As listas ordenadas são usadas quando a ordem dos itens é importante, como em etapas de
@@ -65,7 +65,7 @@
       
 <hr>
     <h2 id="form">Trabalhando com formulários</h2>
-     <small><a href="#inicio">(Voltar)</a></small>
+     <small><a style ="color: #33cca8;" href="#inicio">(Voltar)</a></small>
 
      <p>O <b>form</b> elemento é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.
         <i>Exemplos</i>
@@ -108,9 +108,9 @@
         <h4><b>O botão Enviar</b></h4>
         <p>O <b>input type="submit"</b>define um botão para enviar os dados do formulário para um manipulador de formulários.
 
-O manipulador de formulários normalmente é um arquivo no servidor com um script para processar dados de entrada.
+        O manipulador de formulários normalmente é um arquivo no servidor com um script para processar dados de entrada.
 
-O manipulador de formulário é especificado no atributo do formulário action .</p>
+        O manipulador de formulário é especificado no atributo do formulário action .</p>
 
         <form action="/action_page.php">
             <label for="fname">First name:</label><br>
@@ -121,38 +121,133 @@ O manipulador de formulário é especificado no atributo do formulário action .
         </form>
 
     <hr>
-    <h2 id="surgimento">História dos computadores</h2>
-    <small><a href="#inicio">(Voltar)</a></small>
-
-    <p>O surgimento dos computadores remonta à década de 1940, quando os primeiros dispositivos eletrônicos foram desenvolvidos para realizar cálculos complexos. 
-        Desde então, a evolução da tecnologia levou ao desenvolvimento de computadores pessoais, laptops e dispositivos móveis, transformando a forma como interagimos com a informação.</p>
-      
-    <hr>
-    <h2 id="clients">O que são <i>Clients</i>?</h2>
-    <small><a href="#inicio">(Voltar)</a></small>
-
-    <p></p>
     
-    <hr>
-    <h2 id="servers">O que são <i>Servers</i>?</h2>
-     <small><a href="#inicio">(Voltar)</a></small>
+    <h2 id="imagem">Como inserir imagem <i>Imagens</i>?</h2>
+    <small><a style ="color: #33cca8;" href="#inicio">(Voltar)</a></small>
 
-    <p></p> 
-       
+    <p>Para inserir imagem, utiliza a tag <b>img</b> e o <b>src</b> que especifica o caminho da imagem que pode ser local <i>Importatente salvar na pasta <u>assets</u> O formato da imagem também interfere.
+    </i> <blockquote><p>A diferença entre os arquivos <b>PNG</b> e o arquivo<b>JPG</b> </p>
+
+        <blockquote><strong><u>O <i>JPG </i> ocupa menos espaço (Kbites) comprimindo a imagem mas perde qualidade e resolução. <u><i>PNG</i> É um arquivo mais pesado, mas tem a vantagem de ter a transparência</u></u></strong> </p></blockquote></blockquote>
+    
+        <h6>Imagem em <b>JPG</b></h6>
+        <p>Uso recomendando para fotos</p>
+
+        <img src="assets/MainBefore.jpg" alt="Exemplo de imagem JPG" width="300">
+        <br>
+       <img src="assets/logo.jpg" alt="Exemplo de imagem JPG" width="300">
+
+        <h6>Imagem em <b>PNG</b></h6>
+        <p>Uso recomendado para logo, label</p>
+
+        <img src="assets/MainBefore.png" alt="Exemplo de imagem PNG" width="300">
+        <br>
+        <img src="assets/logo.png" alt="Exemplo de imagem JPG" width="300">
+
+        <blockquote>Quando diminuimos a largura de uma imagem, automaticamente ela reduz a altura </blockquote>
 
     <hr>
+    <h2 id="tabelas">Como usar <i>Tabelas</i></h2>
+     <small><a  style ="color: #33cca8;"href="#inicio">(Voltar)</a></small>
+
+    <p> Para criar uma tabela em HTML, utiliza-se a tag <b>table</b>, que serve como contêiner principal da tabela. Dentro dela, as linhas são definidas pela tag <b>tr</b> (table row), e cada linha pode conter células de cabeçalho <b>th</b> ou células de dados <b>td</b>. As células de cabeçalho geralmente aparecem na primeira linha da tabela e são usadas para identificar o conteúdo das colunas. As células de dados são usadas nas linhas seguintes para exibir as informações propriamente ditas. É possível personalizar a aparência da tabela com atributos HTML ou, preferencialmente, com CSS.</p> 
+      
+     <table style="width: 80%; margin: 0 auto; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr style="background-color: #2c3e50; color: white;">
+                <th style="padding: 10px; border: 1px solid #ccc;">Identificador</th>
+                <th style="padding: 10px; border: 1px solid #ccc;">Nome</th>
+                <th style="padding: 10px; border: 1px solid #ccc;">E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: #84cfe1;">
+                <td style="padding: 10px; border: 1px solid #ccc;">1</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Fernanda</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">fernanda@email.com</td>
+            </tr>
+            <tr style="background-color: #33cca8;">
+                <td style="padding: 10px; border: 1px solid #ccc;">2</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Lucas</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">lucas@email.com</td>
+            </tr>
+            <tr style="background-color: #84cfe1">
+                <td style="padding: 10px; border: 1px solid #ccc;">3</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Juliana</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">juliana@email.com</td>
+            </tr>
+                <tr style="background-color: #33cca8;">
+                <td style="padding: 10px; border: 1px solid #ccc;">4</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Guilherme</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">gui@email.com</td>
+            </tr>
+            <tr style="background-color: #84cfe1">
+                <td style="padding: 10px; border: 1px solid #ccc;">5</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Julio</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">julio@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+
+    <h2 id="videos">Como inserir videos</h2>
+    <small><a style ="color: #33cca8;" href="#inicio">(Voltar)</a></small>
+
+    <p>Para inserir vídeos diretamente em uma página HTML, usamos a tag <b>iframe</b>, que permite incorporar conteúdos de outras fontes. Essa tag precisa apontar para o link de incorporação do vídeo (e não o link normal da página do YouTube).</p>
+        <h2>Vídeos de Referência sobre HTML</h2>
+
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/4dQtz1PpY9A"
+            title="Curso de HTML5 e CSS3 - Curso em Vídeo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <br></br>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/epDCjksKMok"
+            title="HTML Básico - Gustavo Guanabara"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <br></br>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/jgQjeqGRdgA"
+            title="HTML para Iniciantes - Hora de Codar"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
 
     <h2 id="link">Links de referências</h2>
-    <small><a href="#inicio">(Voltar)</a></small>
+    <small><a style ="color: #33cca8;" href="#inicio">(Voltar)</a></small>
 
     
     <p>Links úteis para aprender mais sobre HTML e desenvolvimento web:</p>
+    <ul>
+        <li><a style ="color: #b315b0;" href="http://dio.me" target="_blank" rel="noopener noreferrer">DIO</a></li>
+        <li><a style ="color: #b315b0;"  href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools - HTML</a></li>
+        <li><a style ="color: #b315b0;"  href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML</a></li>
+        <li><a style ="color: #b315b0;"  href="https://www.w3.org/TR/html52/" target="_blank" rel="noopener noreferrer">W3C - Especificação HTML5.2</a></li>
+        <li><a style ="color: #b315b0;"  href="https://www.youtube.com/watch?v=4dQtz1PpY9A" target="_blank" rel="noopener noreferrer">Curso de HTML5 e CSS3 - Curso em Vídeo</a></li>
+        <li><a style ="color: #b315b0;"  href="https://www.youtube.com/watch?v=epDCjksKMok" target="_blank" rel="noopener noreferrer">HTML Básico - Programação Web - Gustavo Guanabara</a></li>
+        <li><a style ="color: #b315b0;"  href="https://www.youtube.com/watch?v=jgQjeqGRdgA" target="_blank" rel="noopener noreferrer">HTML para Iniciantes - Hora de Codar</a></li>
+    </ul>
 
-        <ul>
+
+
+        <!-- <ul>
         <li><a href="http://dio.me" target="_blank" rel="noopener noreferrer">DIO</a></li>
         <li><a href="http://w3c.org" target="_blank" rel="noopener noreferrer">W3C</a></li>
         <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
-        </ul>
+        </ul> -->
 
 
 </body>
