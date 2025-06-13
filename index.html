@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <ul>
+        <li><a href="#surgimento ">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#form">Trabalhando com formularios</a></li>
+        <li><a href="#link">Links de referências</a></li>
+    </ul>
+
+    
+<hr>
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+     <small><a href="#inicio">(Voltar)</a></small>
+
+    <p>A declaração <!DOCTYPE html> indica que este documento segue o padrão HTML5. 
+        O elemento <strong><b>html</b></strong> é o elemento raiz de uma página HTML,
+        que envolve todo o conteúdo da página. Dentro dele, temos o elemento <i>head</i>,
+        responsável por conter informações meta sobre a página, como configurações e links
+        para estilos ou scripts. O elemento <i>title</i>define o título da página, que é 
+        exibido na barra de título do navegador ou na aba onde a página está aberta.
+        Já o elemento <i>body</i> representa o corpo do documento e funciona como um contêiner 
+        para todo o conteúdo visível, incluindo cabeçalhos, parágrafos, imagens, links, tabelas
+        e listas. 
+<hr>
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+     <small><a href="#inicio">(Voltar)</a></small>
+
+
+      <p>As listas ordenadas são usadas quando a ordem dos itens é importante, como em etapas de
+       um processo:</p> 
+        
+    <i><u>Listas Ordenadas</u></i>  
+
+        <ol>
+            <li>Primeiro passo</li>
+            <li>Segundo passo</li>
+            <li>Terceiro passo</li>
+        </ol>
+
+    <i><u>Listas Não Ordenadas</u></i>  
+        
+        <p>As listas não ordenadas são usadas quando a ordem não é relevante, como em uma lista de compras.</p> 
+        
+        <ul>
+            <li>Maçã</li>
+            <li>Banana</li>
+            <li>Laranja</li>
+        </ul>
+
+      
+<hr>
+    <h2 id="form">Trabalhando com formulários</h2>
+     <small><a href="#inicio">(Voltar)</a></small>
+
+     <p>O <b>form</b> elemento é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.
+        <i>Exemplos</i>
+
+        <h4><b>Campos de texto</b></h4>
+        <p>Os campos de texto permitem que os usuários insiram informações, como nome, e-mail, etc. Eles são definidos com o elemento <strong><input type="text"></strong>.</p>
+        
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+
+        
+        <h4><b>Botões de rádio</b></h4>
+        <p>Os botões de opção permitem que o usuário selecione UMA dentre um número limitado de opções.</p>
+
+            <p>Choose your favorite Web language:</p>
+
+                <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                </form>
+
+        <h4><b>Caixas de seleção</b></h4>
+        <p>As caixas de seleção permitem que um usuário selecione ZERO ou MAIS opções de um número limitado de escolhas.</p>
+             <form>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+            </form>
+        <h4><b>O botão Enviar</b></h4>
+        <p>O <b>input type="submit"</b>define um botão para enviar os dados do formulário para um manipulador de formulários.
+
+O manipulador de formulários normalmente é um arquivo no servidor com um script para processar dados de entrada.
+
+O manipulador de formulário é especificado no atributo do formulário action .</p>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    <hr>
+    <h2 id="surgimento">História dos computadores</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <p>O surgimento dos computadores remonta à década de 1940, quando os primeiros dispositivos eletrônicos foram desenvolvidos para realizar cálculos complexos. 
+        Desde então, a evolução da tecnologia levou ao desenvolvimento de computadores pessoais, laptops e dispositivos móveis, transformando a forma como interagimos com a informação.</p>
+      
+    <hr>
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <p></p>
+    
+    <hr>
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+     <small><a href="#inicio">(Voltar)</a></small>
+
+    <p></p> 
+       
+
+    <hr>
+
+    <h2 id="link">Links de referências</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    
+    <p>Links úteis para aprender mais sobre HTML e desenvolvimento web:</p>
+
+        <ul>
+        <li><a href="http://dio.me" target="_blank" rel="noopener noreferrer">DIO</a></li>
+        <li><a href="http://w3c.org" target="_blank" rel="noopener noreferrer">W3C</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+        </ul>
+
+
+</body>
+</html>
