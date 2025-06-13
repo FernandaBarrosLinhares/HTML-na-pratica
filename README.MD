@@ -4,12 +4,12 @@ Este é um projeto introdutório com HTML que demonstra os conceitos básicos da
 
 ## 🔖 Índice de Tópicos
 
-- [História dos Computadores](#história-dos-computadores)
-- [O que são Clients?](#o-que-são-clients)
-- [O que são Servers?](#o-que-são-servers)
 - [Estrutura Básica de um HTML](#estrutura-básica-de-um-html)
 - [Listas Ordenadas e Não Ordenadas](#listas)
 - [Trabalhando com Formulários](#trabalhando-com-formulários)
+- [Como inserir Imagens](#imagens)
+- [Como inserir Tabelas](#tabelas)
+- [Como inserir Vídeos](#videos)
 - [Links de Referência](#links-de-referência)
 
 ## 🧱 Estrutura Básica do HTML
@@ -37,13 +37,43 @@ Inclui exemplos práticos de:
 - Caixas de seleção (`<input type="checkbox">`)
 - Botão de envio (`<input type="submit">`)
 
-## 📚 Links de Referência
+## 🖼️ Como inserir Imagens
 
-Os links externos sobre os assuntos abordados devem abrir em **nova aba**. Alguns exemplos usados:
+Para inserir imagens, utiliza-se a tag `<img>` com o atributo `src` que especifica o caminho da imagem, que pode ser local (importante salvar na pasta `assets`). O formato da imagem também interfere.
+
+> **Importante:** A diferença entre os arquivos **PNG** e **JPG**:  
+> - **JPG** ocupa menos espaço por comprimir a imagem, mas perde qualidade e resolução.  
+> - **PNG** é um arquivo mais pesado, mas suporta transparência, ideal para logos e labels.
+
+**Uso recomendado:**  
+- JPG para fotos  
+- PNG para logos e labels
+
+Ao diminuir a largura de uma imagem, a altura é ajustada proporcionalmente para evitar distorções.
+
+## 📊 Como usar Tabelas
+
+Para criar uma tabela em HTML, utiliza-se a tag `<table>` que contém as linhas (`<tr>`). Dentro das linhas, as células podem ser de cabeçalho (`<th>`) ou dados (`<td>`). Geralmente a primeira linha contém os cabeçalhos para identificar as colunas.
+
+A aparência da tabela pode ser personalizada com CSS para melhorar a legibilidade e o estilo.
+
+## 🎥 Como inserir Vídeos
+
+Para inserir vídeos em uma página HTML, geralmente usamos a tag `<iframe>`, que permite incorporar vídeos de plataformas como o YouTube diretamente na página. Para isso, é necessário usar o link de incorporação (embed) fornecido pelo próprio YouTube, e não o link padrão do vídeo.
+
+Assim, o vídeo fica visível e pode ser reproduzido dentro da página sem que o usuário precise sair do site.
+
+## 🔗 Links de Referência
+
+Links úteis para aprender mais sobre HTML e desenvolvimento web:
 
 - [DIO](http://dio.me)
-- [W3C](http://w3c.org)
-- [W3schools](https://www.w3schools.com/html/default.asp)
+- [W3Schools - HTML](https://www.w3schools.com/html/)
+- [MDN Web Docs - HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [W3C - Especificação HTML5.2](https://www.w3.org/TR/html52/)
+- [Curso de HTML5 e CSS3 - Curso em Vídeo](https://www.youtube.com/watch?v=4dQtz1PpY9A)
+- [HTML Básico - Programação Web - Gustavo Guanabara](https://www.youtube.com/watch?v=epDCjksKMok)
+- [HTML para Iniciantes - Hora de Codar](https://www.youtube.com/watch?v=jgQjeqGRdgA)
 
 ## 🔗 Uso de Âncoras
 
@@ -51,15 +81,15 @@ O projeto utiliza o recurso de âncoras (`id`) e links internos (`<a href="#id">
 
 ## 🛠️ Tecnologias
 
-- HTML5
+- HTML5  
 - Sem uso de CSS ou JavaScript neste módulo
 
 ## 🚀 Como usar
 
-1. Copie o código para um arquivo `.html`.
-2. Abra no navegador.
+1. Copie o código para um arquivo `.html`.  
+2. Abra no navegador.  
 3. Navegue entre os tópicos usando o índice ou os botões "Voltar".
 
 ---
 
-> Projeto educacional desenvolvido como parte do Módulo 1 da formação em HTML da **Bootcamp Satander**.
+> Projeto educacional desenvolvido como parte do Módulo 1 da formação em HTML da **Bootcamp Santander**.
